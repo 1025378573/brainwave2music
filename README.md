@@ -103,15 +103,4 @@ python app.py
 - `new.py`: New implementation of EEG signal processing
 - `text_to_music.py`: Text to music conversion module
 
-## Contributing
-
-Pull requests are welcome to improve the system.
-
-## License
-
-MIT License
-
-## Contact
-
-For any questions, please submit an Issue on GitHub.
 
