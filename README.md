@@ -39,51 +39,42 @@ EEG Signal + Text Description → Demucs Processing → Diffusion Model → Musi
 - **Music Generation**: Combine with text descriptions
 - **Final Output**: Generate enhanced musical composition
 
-## Main Features
+## Installation
 
-1. **EEG to Music Conversion**
-   - Processes EEG signals using Wavelet Transform
-   - Uses Stable Diffusion for spectrogram enhancement
-   - Generates high-quality spectrograms
-   - Converts to audio signals
-
-2. **Text to Music Generation**
-   - Uses MusicGen model
-   - Supports music generation from text descriptions
-   - Adjustable generation parameters
-
-3. **Hybrid Mode**
-   - Combines EEG signals with text descriptions
-   - Uses Demucs for audio separation
-   - Applies Stable Diffusion for quality enhancement
-   - Supports multi-channel processing
-
-## System Structure
-
-```
-brainwave2music/
-├── app.py                 # Main entry point
-├── eeg_to_music.py       # EEG signal processing
-├── melody_to_music.py    # Melody generation
-├── melody.py            # Audio processing
-└── text_to_music.py    # Text to music conversion
+1. **Clone the Repository**
+```bash
+git clone https://github.com/1025378573/brainwave2music.git
+cd brainwave2music
 ```
 
-## Usage
-
-1. **Install Dependencies**
+2. **Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-2. **Run the Program**
+3. **Set up API Keys**
+```bash
+# Copy the API keys template
+cp gpt/api_keys.py.example gpt/api_keys.py
+
+# Edit the file and add your OpenAI API key
+# Replace 'your_openai_api_key_here' with your actual API key
+```
+
+4. **Run the Program**
 ```bash
 python app.py
 ```
 
-3. **Choose Mode**
+## Usage
+
+1. **Choose Mode**
 - Text mode: Generate music from text descriptions
 - Melody mode: Generate music from EEG signals
+
+2. **Input Requirements**
+- For text mode: Enter descriptive keywords
+- For melody mode: Provide EEG data files
 
 ## Technical Features
 
@@ -100,6 +91,7 @@ python app.py
 - Python 3.8+
 - PyTorch
 - CUDA/MPS support (optional)
+- OpenAI API key
 - Other dependencies listed in requirements.txt
 
 ## File Descriptions

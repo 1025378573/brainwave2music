@@ -1,0 +1,6 @@
+# OpenAI API Key
+# Replace with your own API key from https://platform.openai.com/account/api-keys
+openai_key = "your_openai_api_key_here"
+
+# Other API keys can be added here if needed
+# example_key = "your_example_api_key_here" 
